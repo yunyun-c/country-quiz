@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Kablammo&family=Ubuntu:wght@300;400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  /* font-family: "Kablammo", cursive; */
+  font-family: "Ubuntu", sans-serif;
+  margin: auto;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+  font-size: 16px;
+  background: url(./img/background.png);
+  background-size: cover;
+}
+
+header {
+  padding: 1rem;
+  color: whitesmoke;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.quiz-title {
+  position: relative;
+  top: 3rem;
+  left: 0.5rem;
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 1rem 0;
+}
+
+.quiz-title h2 {
+  color: white;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  text-align: start;
+  margin: 0;
+}
+
+.quiz-title img {
+  width: 100%;
+  max-width: 38%;
+  height: auto;
+}
+
+.quiz-container {
+  border-radius: 10px;
+  background: white;
+  padding: 3rem 1.5rem;
+}
+.question {
+  padding: 1rem 0.5rem;
+}
+
+.answer-options p {
+  padding: 0.5rem;
+  text-align: left;
+  border-radius: 10px;
+  border: 2px solid lightseagreen;
+  margin: 1.5rem 0;
+}
+
+.answer-options p:hover {
+  border: none;
+  background-color: salmon;
+  color: white;
+}
+
+.answer-options span {
+  padding-right: 1.5rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+  color: white;
+}

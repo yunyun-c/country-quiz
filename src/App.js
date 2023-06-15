@@ -8,18 +8,32 @@ function App() {
         <h1>Country Quiz</h1>
       </header>
       <main>
-        <h2>Country Quiz</h2>
-        <img src={quizImage} alt="adventure" />
+        <div className="quiz-title">
+          <h2>Country Quiz</h2>
+          <img src={quizImage} alt="adventure" />
+        </div>
+
         <div className="quiz-container">
           <h3 className="question">Kuala Lumpur is the capital of</h3>
           <div className="answer-options">
-            <p className="option-a"></p>
-            <p className="option-b"></p>
-            <p className="option-c"></p>
-            <p className="option-d"></p>
+            <p className="option-a">
+              <span>A</span> Country
+            </p>
+            <p className="option-b">
+              <span>B</span> Country
+            </p>
+            <p className="option-c">
+              <span>C</span> Country
+            </p>
+            <p className="option-d">
+              <span>D</span> Country
+            </p>
           </div>
         </div>
       </main>
+      <footer>
+        <p>CCCCCCC</p>
+      </footer>
     </div>
   );
 }
