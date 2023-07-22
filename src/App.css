@@ -55,7 +55,7 @@ main {
   display: block;
   border-radius: 10px;
   background: white;
-  padding: 2rem 1.5rem;
+  padding: 2rem 1.5rem 4rem 1.5rem;
 }
 
 .quiz-container.hidden,
@@ -76,21 +76,29 @@ main {
 
 .answer-options p:hover {
   border: none;
-  background-color: salmon;
+  background-color: #ffa500;
   color: white;
 }
 
-.option.wrong,
+.option.incorrect,
 .option.correct {
   border: none;
   color: white;
 }
 
-.option.wrong {
+.option.correct {
   background-color: lightseagreen;
 }
-.option.correct {
+.option.incorrect {
   background-color: coral;
+}
+
+.option .icon {
+  float: right;
+}
+.material-icons {
+  color: white;
+  font-size: 1.2rem;
 }
 
 .answer-options span {
