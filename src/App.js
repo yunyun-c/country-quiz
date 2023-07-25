@@ -44,7 +44,7 @@ function App() {
         )}
       </main>
       <footer>
-        <p>CCCCCCC</p>
+        <p>created by yunyun-c - devChallenges.io</p>
       </footer>
     </div>
   );
