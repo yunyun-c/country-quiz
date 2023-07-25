@@ -1,7 +1,7 @@
 import resultImage from "./img/undraw_winners_ao2o 2.svg";
 import React from "react";
 
-function Result(show, score, onRestart) {
+function Result({ show, score, onRestart }) {
   return (
     <div>
       <div className={`result-container ${show ? "show" : "hidden"}`}>

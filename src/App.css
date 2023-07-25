@@ -32,6 +32,7 @@ main {
   left: 0.5rem;
   display: flex;
   flex-wrap: nowrap;
+  align-items: center;
   padding: 1rem 0;
 }
 
@@ -44,14 +45,28 @@ main {
 }
 
 .quiz-title img {
-  visibility: none;
   width: 100%;
   max-width: 38%;
   height: auto;
+  z-index: 3;
+}
+
+.quiz-container,
+.result-container {
+  transition: all 0.3s ease-in-out;
+}
+
+.quiz-container {
+  transform: translateY(-100%);
+}
+
+.result-container {
+  transform: translateY(100%);
 }
 
 .quiz-container.show,
 .result-container.show {
+  transform: translateY(0);
   display: block;
   border-radius: 10px;
   background: white;
@@ -62,6 +77,15 @@ main {
 .result-container.hidden {
   display: none;
 }
+
+.flag {
+  margin: 1rem 0.5rem;
+  display: flex;
+  width: 100%;
+  max-width: 35%;
+  height: auto;
+}
+
 .question {
   padding: 1rem 0.5rem;
 }
@@ -150,6 +174,12 @@ main {
   line-height: 1.5rem;
   background: transparent;
   margin-top: 3rem;
+}
+
+.btn-tryAgain:hover {
+  border-color: transparent;
+  color: white;
+  background-color: #ffa500;
 }
 
 footer {

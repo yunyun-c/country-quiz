@@ -6,10 +6,14 @@ import "./App.css";
 function App() {
   const [quizCompleted, setQuizCompleted] = useState(false);
   const [score, setScore] = useState(0);
+  const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [questions, setQuestions] = useState([]);
 
   function handleRestart() {
     setQuizCompleted(false);
     setScore(0);
+    setCurrentQuestion(0);
+    setQuestions([]);
   }
 
   return (
@@ -18,7 +22,19 @@ function App() {
         <h1>Country Quiz</h1>
       </header>
       <main>
-        <Quiz setQuizCompleted={setQuizCompleted}></Quiz>
+        {!quizCompleted && (
+          <Quiz
+            setQuizCompleted={setQuizCompleted}
+            score={score}
+            setScore={setScore}
+            currentQuestion={currentQuestion}
+            setCurrentQuestion={setCurrentQuestion}
+            questions={questions}
+            setQuestions={setQuestions}
+            quizCompleted={quizCompleted}
+          ></Quiz>
+        )}
+        ,
         {quizCompleted && (
           <Result
             show={quizCompleted}
